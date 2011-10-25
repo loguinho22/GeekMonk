@@ -35,17 +35,14 @@
 			}
 
 			#tit {
-			position: relative;
          text-align: center;
 			}
 
 			#text {
-			position: relative;
           text-align: left;
 			}
 
 			#autor {
-			position: relative;
-         text-align: center;
+         text-align: right;
          float: center;
 			}

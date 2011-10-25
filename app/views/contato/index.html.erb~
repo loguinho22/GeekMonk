@@ -1,0 +1,7 @@
+<% @autores.each do |autor| %>
+
+   <h3>O GeekMonkeys é um site não comercial, com o intuito de apenas trazer coisas novas e interessantes do mundo Geek.<br>
+   Seus autores são: <%autor.autor+","%>
+   </h3>
+
+<% end %>

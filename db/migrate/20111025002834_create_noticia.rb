@@ -4,6 +4,7 @@ class CreateNoticia < ActiveRecord::Migration
       t.string :titulo
       t.text :texto
       t.string :autor
+
     
 
       t.timestamps
