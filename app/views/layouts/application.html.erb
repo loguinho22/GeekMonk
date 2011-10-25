@@ -1,14 +1,35 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>GeekMonkeys</title>
-  <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag :defaults %>
-  <%= csrf_meta_tag %>
-</head>
-<body>
+	<head>	
 
-<%= yield %>
+		<title>GeekMonkeys</title>
 
-</body>
+		<%=stylesheet_link_tag "estilo"%>
+		
+	</head>
+	<body>
+		
+		<div id="banner">
+			
+				<div id="logo">
+					<img src="/banner.png"/>
+					<div id="menu">
+						<a href="../home"><img src="/imagens/blog1.png" onmouseover="this.src='/imagens/blog2.png'" onmouseout="this.src='/imagens/blog1.png'"/></a>
+						<a href="../sobre"><img src="/imagens/sobre1.png" onmouseover="this.src='/imagens/sobre2.png'" onmouseout="this.src='/imagens/sobre1.png'"/></a>
+						<a href="../contato"><img src="/imagens/contato1.png" onmouseover="this.src='/imagens/contato2.png'" onmouseout="this.src='/imagens/contato1.png'"/></a>
+						
+					</div>
+				</div>
+			
+		</div>
+		<br><br><br><br>
+
+		<div id="conteudo">
+
+    
+      <%=yield%>
+         
+         
+		</div>
+		
+	</body>
 </html>

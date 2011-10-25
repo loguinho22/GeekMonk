@@ -1,0 +1,21 @@
+<% @noticias.each do |noticia| %>
+
+   <div id="tit">
+
+      <h1><%=link_to noticia.titulo, :action => "show", :id => noticia%></h1>
+
+   </div>
+
+<br>
+
+   <div id="texto">
+
+      <h2><%=noticia.texto%></h2>
+
+      <br>
+
+      <%=noticia.autor%>
+
+   </div>
+
+  <% end %>
